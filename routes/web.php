@@ -19,6 +19,8 @@ Route::get('/', function () {
 
 
 Route::get('/index_u', [App\Http\Controllers\VideoController::class,'index']);
+Route::resource('permissions', App\Http\Controllers\VideoController::class);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
